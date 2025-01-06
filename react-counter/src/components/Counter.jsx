@@ -10,7 +10,7 @@ export default function Counter() {
         <div>
             <button onClick = {() => setCount((count) => count + 1)}> Incréménter </button>
             <button onClick = {() => setCount((count) => count - 1)}> Décrémenter </button>
-            {count < 0 ? <p> Le compteur est négatif </p> : <p> Le compteur est à : {count} </p>}
+            {count < 0 ? <p style={{ color: '#ff0000' }}> Le compteur est à {count} </p> : <p style={{ color: "#009f18"}}> Le compteur est à : {count} </p>}
         
             <button onClick = {() => setCount(0)}> Réinitialiser </button>
         </div>
